@@ -4,6 +4,7 @@ import connect from "./connect";
 import JokesContainer from "./jokes-container";
 import Jokes from "./Jokes";
 import Laughs from "./Laughs";
+import Giggles from "./Giggles";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <div className="App">
           <ConnectedJokes />
           <Laughs />
+          <Giggles />
         </div>
       </Provider>
     );

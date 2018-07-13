@@ -14,7 +14,7 @@ class Laughs extends Component {
     const jokes = this.props.containers[0];
     //This technically works, but the big problem here is that if there's more than one connect...
     jokes.print("Alec");
-    console.log(`this.props.containers: ${this.props.containers}`);
+    console.log(this.props.containers);
     jokes.getJoke(); //no brackets, getJoke is synchronous
   }
   render() {
