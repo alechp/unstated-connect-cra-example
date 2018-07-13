@@ -7,6 +7,3 @@ Better understand the limitations of [unstated](https://github.com/jamiebuilds/u
 
 ![browser output](./screenshots/browser.png)
 ![console output](./screenshots/console.png)
-
-**Libraries**
-[unstated]
