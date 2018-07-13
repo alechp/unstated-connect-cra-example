@@ -6,11 +6,17 @@ import PunsContainer from "./puns-container";
 class Giggles extends Component {
   constructor(props) {
     super(props);
-    console.log(this.props.containers);
-    // this.jokes = this.props.containers[0];
+    this.puns = this.props.containers[0]; //0 == Puns... Based on connect order
+    this.jokes = this.props.containers[1]; //1 == Jokes ...Based on connect order
   }
   componentDidMount() {
     console.log(this.props.containers);
+    console.log(
+      "PunsContainer state being called in Giggles: ",
+      this.puns.getPuns()
+    );
+    this.jokes.hello("Alec");
+    this.puns.printPuns();
   }
   render() {
     return <div>Giggles</div>;

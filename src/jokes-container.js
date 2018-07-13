@@ -16,7 +16,7 @@ export default class JokesContainer extends Container {
   getJoke() {
     this.setState({ list: this.state.jokeList.concat("joke") });
   }
-  print(me) {
-    console.log(`Herro, ${me}`);
+  hello(name) {
+    console.log(`Herro, ${name}`);
   }
 }

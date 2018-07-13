@@ -13,7 +13,7 @@ class Laughs extends Component {
     // const [jokes] = this.props.containers;
     const jokes = this.props.containers[0];
     //This technically works, but the big problem here is that if there's more than one connect...
-    jokes.print("Alec");
+    jokes.hello("Alec");
     console.log(this.props.containers);
     jokes.getJoke(); //no brackets, getJoke is synchronous
   }
@@ -23,7 +23,7 @@ class Laughs extends Component {
     let data = [jokes.foobar()]; //Promise finishes
     let data2 = Promise.resolve([jokes.foobar()]); //Promise finishes
 
-    jokes.print("World"); //no brackets, print is sync
+    jokes.hello("World"); //no brackets, print is sync
     console.log(data);
     console.log(data2);
 

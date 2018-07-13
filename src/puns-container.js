@@ -14,4 +14,7 @@ export default class PunsContainer extends Container {
   getPuns() {
     return this.state.puns;
   }
+  printPuns() {
+    console.log(`Puns being printed from PunsContainer: ${this.state.puns}`);
+  }
 }
